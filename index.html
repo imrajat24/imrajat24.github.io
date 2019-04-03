@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Phone Directory App</title>
+</head>
+
+<body>
+   
+    <!-- Heading -->   
+    <h1 class="hero-heading">Mini Phone Directory</h1> 
+    
+    <!-- Table -->
+    <table id="contacts-table">
+        <tr id="contacts-head">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+   <!-- Form -->
+    <form id="contacts-form">
+        <div class="item text">
+            <label>First name:</label>
+            <div class="field"><input type="text" name="first_name" /></div>
+        </div>
+        <div class="item text">
+            <label>Number:</label>
+            <div class="field"><input type="number" name="number" /></div>
+        </div>
+        <div class="button-wrapper">
+            <div class="item button">
+                <div class="field"><input type="button" id="contacts-op-discard" value="Discard" /></div>
+            </div>
+            <div class="item button button-default">
+                <div class="field"><input type="submit" id="contacts-op-save" value="Save" /></div>
+            </div>
+        </div>
+        <input type="hidden" name="id_entry" value="0" />
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
